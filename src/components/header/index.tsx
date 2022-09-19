@@ -2,10 +2,13 @@ import styles from "./index.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
-const header:React.FC = () => {
+const Header = () => {
   return (
     <section className={styles.container}>
-      <header className={styles.header}>
+      <header
+        data-testid="header"
+        className={styles.header}
+      >
         <div className={styles.header__icon} >
           <Image
             src="/image/header/menu.svg"
@@ -16,7 +19,10 @@ const header:React.FC = () => {
             priority
           />
         </div>
-        <h1 style={{ letterSpacing: "1px", textAlign: "left" }}>
+        <h1
+          data-testid="headerLink"
+          style={{ letterSpacing: "1px", textAlign: "left" }}
+        >
           <Link href="/">
             <a>
               <span style={{ fontWeight: 250 }}>SampleNews</span>
@@ -26,6 +32,7 @@ const header:React.FC = () => {
       </header>
     </section>
   )
-}
+};
 
-export default header;
+
+export default Header;
