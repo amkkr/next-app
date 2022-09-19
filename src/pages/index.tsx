@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Header from "@/pages/header"
+import Header  from "@/components/header"
 import styles from "./index.module.scss";
 
 
