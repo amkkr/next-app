@@ -1,17 +1,18 @@
+import { FC, ReactElement } from "react";
 import Header from "./header"
 import styles from "./index.module.scss";
 
-type LayoutProps = {
-    children: React.ReactNode;
-};
+interface LayoutProps {
+  children: ReactElement;
+}
 
-function mainLayout({ children }: LayoutProps): JSX.Element {
+const main: FC<LayoutProps> = ({ children }: LayoutProps) => {
   return (
     <>
       <Header />
       <main className={styles.main}>{children}</main>
     </>
-  );
+  )
 }
 
-export default mainLayout;
+export default main;

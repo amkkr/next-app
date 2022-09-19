@@ -2,7 +2,7 @@ import styles from "./index.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
-function header(): JSX.Element {
+const header:React.FC = () => {
   return (
     <section className={styles.container}>
       <header className={styles.header}>
