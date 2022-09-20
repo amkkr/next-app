@@ -3,6 +3,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 First, run the development server:
+```bash
+// you need direnv & nvm or node V16.17.0
+cd ${project_root}
+direnv allow
+npm i
+```
 
 ```bash
 npm run dev
