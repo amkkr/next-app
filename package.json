@@ -9,6 +9,10 @@
     "lint": "next lint",
     "test": "jest --watch"
   },
+  "engines": {
+    "node": "16.17.0",
+    "npm": "8.15.0"
+  },
   "dependencies": {
     "moment": "^2.29.4",
     "next": "12.2.4",
